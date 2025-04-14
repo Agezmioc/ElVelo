@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <title>Ingresar</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logoLink">
+            <img class="logo" src="./resources/adventures-icon-512x512-r2x3wy4g.png" alt="logo">
+            El Velo
+        </a>
+    </header>
+    <main class="container">
+        <section class="signinSection">
+            <h2>Crear Cuenta</h2>
+            <form action="/submit" method="post">
+                <label for="firstname">Nombre:</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="surname">Apellido:</label>
+                <input type="text" name="surname" id="surname">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password">
+                <label for="passwordConfirm">Confirmar contraseña:</label>
+                <input type="password" name="passwordConfirm" id="passwordConfirm">
+                <input class="buttonlight" type="submit" value="Registrarme">
+            </form>
+        </section>
+        <section class="loginSection">
+            <h2>Iniciar Sesión</h2>
+            <form action="/submit" method="post">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password">
+                <input class="buttonlight" type="submit" value="Ingresar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

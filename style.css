@@ -1,0 +1,235 @@
+/*
+Colors:
+    #011627
+    #69747c
+    #2ec4b6
+    #d5cad6
+    #f0edee
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    color: #011627;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #2ec4b6;
+}
+
+header {
+    background-color: #f0edee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    margin: 1rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 8px;
+    width: 100%;
+}
+
+main {
+    color: #f0edee;
+    background-color: #011627;
+    padding: 3rem;
+}
+
+main p {
+    margin: 1rem;
+    text-align: justify;
+}
+
+nav ul { list-style-type: none; }
+
+nav ul li {
+    display: inline-block;
+}
+
+section {
+    margin: 1rem;
+}
+
+.buttondark {
+    align-items: center;
+    background-color: #011627;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #f0edee;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.buttondark:hover,
+.buttondark:focus { 
+    background-color: #022745;
+}
+
+.buttonlight {
+    align-items: center;
+    background-color: #d5cad6;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #011627;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.buttonlight:hover,
+.buttonlight:focus { 
+    background-color: #ffff;
+}
+
+.characterInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 3rem;
+}
+
+.characterInfo img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.characterContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.characterDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.localNav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 1rem;
+}
+
+.localNav ul li a{
+    color: #d5cad6;
+}
+
+.logo {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(91%) saturate(487%) hue-rotate(167deg) brightness(60%) contrast(97%);
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.signinSection,
+.loginSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
