@@ -175,13 +175,6 @@ section {
     flex: 1;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: flex-start;
-}
-
 .localNav ul li{
     display: flex;
     flex-direction: column;
@@ -229,10 +222,6 @@ section {
 
 .signinSection,
 .loginSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;

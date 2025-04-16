@@ -22,34 +22,43 @@
             El Velo
         </a>
     </header>
-    <main class="container">
-        <section class="signinSection">
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+          <section class="signinSection col-12 col-lg-5 mb-4 mb-lg-0">
             <h2>Crear Cuenta</h2>
             <form action="/submit" method="post">
-                <label for="firstname">Nombre:</label>
-                <input type="text" name="firstname" id="firstname">
-                <label for="surname">Apellido:</label>
-                <input type="text" name="surname" id="surname">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password">
-                <label for="passwordConfirm">Confirmar contraseña:</label>
-                <input type="password" name="passwordConfirm" id="passwordConfirm">
-                <input class="buttonlight" type="submit" value="Registrarme">
+              <label for="firstname">Nombre:</label>
+              <input type="text" name="firstname" id="firstname" class="form-control">
+      
+              <label for="surname">Apellido:</label>
+              <input type="text" name="surname" id="surname" class="form-control">
+      
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" class="form-control">
+      
+              <label for="password">Contraseña:</label>
+              <input type="password" name="password" id="password" class="form-control">
+      
+              <label for="passwordConfirm">Confirmar contraseña:</label>
+              <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control">
+      
+              <input class="btn btn-light mt-3" type="submit" value="Registrarme">
             </form>
-        </section>
-        <section class="loginSection">
+          </section>
+      
+          <section class="loginSection col-12 col-lg-5">
             <h2>Iniciar Sesión</h2>
             <form action="/submit" method="post">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password">
-                <input class="buttonlight" type="submit" value="Ingresar">
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" class="form-control">
+      
+              <label for="password">Contraseña:</label>
+              <input type="password" name="password" id="password" class="form-control">
+      
+              <input class="btn btn-light mt-3" type="submit" value="Ingresar">
             </form>
-        </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+          </section>
+        </div>
+      </main>
 </body>
 </html>
