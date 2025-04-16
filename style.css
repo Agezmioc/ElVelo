@@ -18,7 +18,7 @@ Colors:
 a {
     color: #011627 !important;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 form {
@@ -68,7 +68,16 @@ main p {
 nav ul { list-style-type: none; }
 
 nav ul li {
+    font-weight: bold;
     display: inline-block;
+}
+
+.nav-link {
+    transition: all 0.3s ease
+}
+
+.nav-link:hover {
+    color: #2ec4b6 !important;
 }
 
 section {
@@ -109,7 +118,7 @@ section {
 
 .buttondark:hover,
 .buttondark:focus { 
-    background-color: #022745;
+    background-color: #2ec4b6;
 }
 
 .buttonlight {
