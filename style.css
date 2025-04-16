@@ -16,7 +16,7 @@ Colors:
 }
 
 a {
-    color: #011627;
+    color: #011627 !important;
     font-weight: 700;
     text-decoration: none;
 }
@@ -81,12 +81,13 @@ section {
     border: 0;
     border-radius: 100px;
     box-sizing: border-box;
-    color: #f0edee;
+    color: #f0edee !important;
     cursor: pointer;
     display: inline-flex;
     font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 600;
+    height: 40px;
     justify-content: center;
     line-height: 20px;
     max-width: 480px;
@@ -97,11 +98,13 @@ section {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    text-decoration: none;
     touch-action: manipulation;
     transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     user-select: none;
     -webkit-user-select: none;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 .buttondark:hover,
@@ -172,6 +175,13 @@ section {
     flex: 1;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+}
+
 .localNav ul li{
     display: flex;
     flex-direction: column;
@@ -180,7 +190,7 @@ section {
 }
 
 .localNav ul li a{
-    color: #d5cad6;
+    color: #d5cad6 !important;
 }
 
 .logo {
@@ -194,6 +204,11 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    text-align: center;
 }
 
 .stats {
@@ -210,13 +225,6 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: flex-start;
 }
 
 .signinSection,
