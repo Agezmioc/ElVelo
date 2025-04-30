@@ -1,12 +1,7 @@
-/*
-Colors:
-    #011627
-    #69747c
-    #2ec4b6
-    #d5cad6
-    #f0edee
+@import 'colors';
 
-*/
+/*AVISO: Soy conciente de que es problemático usar los !important, 
+pero ahora mismo no se me ocurre como solventarlo de forma fácil...*/
 
 * {
     margin: 0;
@@ -16,9 +11,9 @@ Colors:
 }
 
 a {
-    color: #011627 !important;
+    color: map-get($map: $colors, $key: dark) !important;
     font-weight: 700;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 form {
@@ -28,20 +23,20 @@ form {
 }
 
 h1, h2, h3 {
-    color: #2ec4b6;
+    color: map-get($map: $colors, $key: highlight) !important;
 }
 
 header {
-    background-color: #f0edee;
+    background-color: map-get($map: $colors, $key: brighter);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1em;
-}
 
-header nav ul {
-    display: flex;
-    gap: 20px;
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 img {
@@ -55,29 +50,31 @@ input {
 }
 
 main {
-    color: #f0edee;
-    background-color: #011627;
+    color: map-get($map: $colors, $key: brighter);
+    background-color: map-get($map: $colors, $key: dark);
     padding: 3rem;
+
+    p {
+        margin: 1rem;
+        text-align: justify;
+    }
 }
 
-main p {
-    margin: 1rem;
-    text-align: justify;
-}
+nav ul {
+    list-style-type: none;
 
-nav ul { list-style-type: none; }
-
-nav ul li {
-    font-weight: bold;
-    display: inline-block;
+    li {
+        font-weight: bold;
+        display: inline-block;
+    }
 }
 
 .nav-link {
-    transition: all 0.3s ease
-}
+    transition: all 0.3s ease;
 
-.nav-link:hover {
-    color: #2ec4b6 !important;
+    &:hover {
+        color: map-get($map: $colors, $key: highlight) !important;
+    }
 }
 
 section {
@@ -86,11 +83,11 @@ section {
 
 .buttondark {
     align-items: center;
-    background-color: #011627;
+    background-color: map-get($map: $colors, $key: dark);
     border: 0;
     border-radius: 100px;
     box-sizing: border-box;
-    color: #f0edee !important;
+    color: map-get($map: $colors, $key: brighter) !important;
     cursor: pointer;
     display: inline-flex;
     font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -114,20 +111,19 @@ section {
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
-}
 
-.buttondark:hover,
-.buttondark:focus { 
-    background-color: #2ec4b6;
+    &:hover, &:focus {
+        background-color: map-get($map: $colors, $key: highlight);
+    }
 }
 
 .buttonlight {
     align-items: center;
-    background-color: #d5cad6;
+    background-color: map-get($map: $colors, $key: bright);
     border: 0;
     border-radius: 100px;
     box-sizing: border-box;
-    color: #011627;
+    color: map-get($map: $colors, $key: dark);
     cursor: pointer;
     display: inline-flex;
     font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -148,11 +144,10 @@ section {
     user-select: none;
     -webkit-user-select: none;
     vertical-align: middle;
-}
 
-.buttonlight:hover,
-.buttonlight:focus { 
-    background-color: #ffff;
+    &:hover, &:focus {
+        background-color: map-get($map: $colors, $key: highlight);
+    }
 }
 
 .characterInfo {
@@ -161,12 +156,12 @@ section {
     align-items: flex-start;
     gap: 10px;
     margin: 3rem;
-}
 
-.characterInfo img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
+    img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
 }
 
 .characterContent {
@@ -184,15 +179,15 @@ section {
     flex: 1;
 }
 
-.localNav ul li{
+.localNav ul li {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     margin: 1rem;
-}
 
-.localNav ul li a{
-    color: #d5cad6 !important;
+    a {
+        color: map-get($map: $colors, $key: bright) !important;
+    }
 }
 
 .logo {
@@ -220,22 +215,18 @@ section {
     display: flex;
     gap: 15px;
     justify-content: center;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-.stats li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.signinSection,
-.loginSection {
+.signinSection, .loginSection {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid map-get($map: $colors, $key: bright);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
